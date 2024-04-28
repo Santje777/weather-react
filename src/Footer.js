@@ -19,6 +19,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         title="link to netlify page"
       >
+        {" "}
         Netlify
       </a>
     </div>

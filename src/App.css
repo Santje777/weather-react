@@ -1,38 +1,179 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  text-align: left;
+  display: block;
+  background: linear-gradient(to left, rgb(60, 179, 250), rgb(253, 216, 81));
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+h1 {
+  position: relative;
+  top: 10px;
+  color: rgb(149, 25, 8);
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  color: rgb(255, 192, 46);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  color: green;
+}
+
+h4.card-title {
+  color: rgba(55, 43, 226, 0.8);
+}
+
+h5 {
+  color: purple;
+}
+
+.temperature {
+  color: rgb(255, 192, 46);
+  font-size: 90px;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+.weather-app-icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: -60px;
+  left: 300px;
+}
+
+.celcius {
+  color: rgb(255, 192, 46);
+  font-size: 50px;
+  position: relative;
+  top: -130px;
+  left: 425px;
+}
+
+.fahrenheit {
+  color: blue;
+  font-size: 50px;
+  position: relative;
+  top: -130px;
+  left: 425px;
+}
+
+.card-title {
+  color: yellow;
+}
+
+.card-one {
+  background: rgb(231, 100, 100);
+  max-width: 700px;
+  position: relative;
+  top: 20px;
+  padding-bottom: 40px;
+}
+.today-highest-lowest {
+  position: relative;
+  width: 250px;
+  left: 425px;
+  top: -100px;
+  border: rgb(149, 25, 8);
+}
+
+.card-two {
+  background: rgb(248, 186, 40);
+  position: relative;
+  left: 12px;
+  padding-bottom: 40px;
+}
+.card-three {
+  background: rgb(15, 224, 43);
+  position: relative;
+  left: -12px;
+  padding-bottom: 40px;
+}
+.card-four {
+  background: rgb(106, 156, 192);
+  max-width: 100%;
+  position: relative;
+  left: 12px;
+  padding-bottom: 40px;
+}
+.card-five {
+  background: rgb(175, 78, 175);
+  max-width: 100%;
+  position: relative;
+  left: -12px;
+  padding-bottom: 40px;
+}
+
+.card-one-screen {
+  display: block;
+  position: relative;
+  padding: 50px;
+  max-width: 500px;
+  top: -40px;
+  left: 20px;
+  font-size: 30px;
+  color: rgb(149, 25, 8);
+}
+.card-two-screen {
+  display: block;
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  top: 90px;
+  left: 180px;
+}
+.card-three-screen {
+  display: block;
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  top: 90px;
+  left: 180px;
+}
+.card-four-screen {
+  display: block;
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  top: 90px;
+  left: 180px;
+}
+.card-five-screen {
+  display: block;
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  top: 90px;
+  left: 180px;
+}
+.input-one {
+  position: relative;
+  left: 30px;
+  top: -30px;
+  width: 190px;
+}
+.input-two {
+  position: relative;
+  top: 70px;
+  width: 190px;
+}
+
+.current-location-button {
+  display: block;
+  position: absolute;
+  left: 470px;
+  top: 100px;
+}
+
+.link-to-github {
+  background: linear-gradient(to left, rgb(60, 179, 250), rgb(253, 216, 81));
+  display: block;
+  position: relative;
+  top: 50px;
+  padding: 10px;
+  color: rgb(149, 25, 8);
+  font-size: 20px;
 }
