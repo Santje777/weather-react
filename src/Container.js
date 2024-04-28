@@ -1,4 +1,6 @@
+import Temperature from "./Temperature.js";
 import Weather from "./Weather.js";
+import CurrentLocation from "./CurrentLocation.js";
 
 export default function Container(props) {
   return (
@@ -7,23 +9,9 @@ export default function Container(props) {
         <div className="card-body">
           <h1 id="place">place</h1>
           <h1 id="current-date">today</h1>
-          <h2 className="temperature" id="current-temperature">
-            current temperature
-          </h2>
-          <a href="/" className="celcius" id="celcius-link">
-            {" "}
-            °C |{" "}
-          </a>
-          <a href="/" className="fahrenheit" id="fahrenheit-link">
-            °F{" "}
-          </a>
+          <Temperature name="Groningen" temperature={19} />
           <Weather />
-
-          <div className="col-3 current-location-button" id="current-location">
-            <button className="btn btn-success shadow-sm">
-              Current location 🌐
-            </button>
-          </div>
+          <CurrentLocation />
         </div>
       </div>
     </div>

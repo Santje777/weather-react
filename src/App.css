@@ -1,5 +1,6 @@
 :root {
   --red: rgb(149, 25, 8);
+  --orange: rgb(255, 192, 46);
   --yellow: rgb(253, 216, 81);
 }
 
@@ -14,12 +15,13 @@
 h1 {
   position: relative;
   top: 10px;
+  left: 20px;
   color: var(--red);
   font-size: 40px;
 }
 
 h2 {
-  color: rgb(255, 192, 46);
+  color: var(--orange);
 }
 
 h3 {
@@ -35,35 +37,25 @@ h5 {
 }
 
 .temperature {
-  color: rgb(255, 192, 46);
+  color: var(--orange);
   font-size: 90px;
   position: relative;
-  top: 30px;
-  left: 15px;
-}
-
-.weather-app-icon {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  top: -60px;
-  left: 300px;
+  top: 5px;
+  left: -120px;
 }
 
 .celcius {
-  color: rgb(255, 192, 46);
+  color: var(--orange);
   font-size: 50px;
   position: relative;
-  top: -130px;
-  left: 425px;
+  left: 605px;
 }
 
 .fahrenheit {
   color: blue;
   font-size: 50px;
   position: relative;
-  top: -130px;
-  left: 425px;
+  left: 590px;
 }
 
 .card-title {
@@ -75,7 +67,7 @@ h5 {
   max-width: 700px;
   position: relative;
   top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   border: var(--red);
 }
 .today-highest-lowest {
@@ -118,7 +110,7 @@ h5 {
   position: relative;
   padding: 5px;
   max-width: 500px;
-  top: -10px;
+  top: 30px;
   left: 20px;
   font-size: 30px;
   color: var(--red);
@@ -160,7 +152,7 @@ h5 {
 .input-one {
   position: relative;
   left: 30px;
-  top: -30px;
+  top: 15px;
   width: 190px;
 }
 .input-two {
@@ -173,7 +165,7 @@ h5 {
   display: block;
   position: absolute;
   left: 470px;
-  top: 100px;
+  top: 50px;
 }
 
 .link-to-github {
