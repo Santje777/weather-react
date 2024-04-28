@@ -1,7 +1,12 @@
+:root {
+  --red: rgb(149, 25, 8);
+  --yellow: rgb(253, 216, 81);
+}
+
 .App {
   text-align: left;
   display: block;
-  background: linear-gradient(to left, rgb(60, 179, 250), rgb(253, 216, 81));
+  background: linear-gradient(to left, rgb(60, 179, 250), var(--yellow));
 }
 
 .App-header {
@@ -9,7 +14,7 @@
 h1 {
   position: relative;
   top: 10px;
-  color: rgb(149, 25, 8);
+  color: var(--red);
   font-size: 40px;
 }
 
@@ -69,15 +74,16 @@ h5 {
   background: rgb(231, 100, 100);
   max-width: 700px;
   position: relative;
-  top: 20px;
-  padding-bottom: 40px;
+  top: 30px;
+  padding-bottom: 10px;
+  border: var(--red);
 }
 .today-highest-lowest {
   position: relative;
   width: 250px;
   left: 425px;
   top: -100px;
-  border: rgb(149, 25, 8);
+  border: var(--red);
 }
 
 .card-two {
@@ -110,12 +116,14 @@ h5 {
 .card-one-screen {
   display: block;
   position: relative;
-  padding: 50px;
+  padding: 5px;
   max-width: 500px;
-  top: -40px;
+  top: -10px;
   left: 20px;
   font-size: 30px;
-  color: rgb(149, 25, 8);
+  color: var(--red);
+  border: var(--red);
+  background: rgba(253, 216, 81, 0.6);
 }
 .card-two-screen {
   display: block;
@@ -174,6 +182,6 @@ h5 {
   position: relative;
   top: 50px;
   padding: 10px;
-  color: rgb(149, 25, 8);
+  color: var(--red);
   font-size: 20px;
 }
