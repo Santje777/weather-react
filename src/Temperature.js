@@ -17,9 +17,10 @@ export default function Temperature(props) {
   return (
     <div className="temperature" id="current-temperature">
       <h2>
+        It is {temperature} ({unit}) in {props.name}
+        {"  "}
         <a href="/" onClick={showCelsius} className="celcius" id="celcius-link">
-          {" "}
-          °C |{" "}
+          °C |
         </a>
         <a
           href="/"
@@ -27,9 +28,8 @@ export default function Temperature(props) {
           className="fahrenheit"
           id="fahrenheit-link"
         >
-          °F{" "}
+          °F
         </a>
-        It is {temperature} ({unit}) in {props.name}
       </h2>
     </div>
   );

@@ -4,7 +4,7 @@ import CurrentLocation from "./CurrentLocation.js";
 
 export default function Container(props) {
   return (
-    <div className="container">
+    <div className="container-ms">
       <div className="card card-one">
         <div className="card-body">
           <h1 id="place">place</h1>

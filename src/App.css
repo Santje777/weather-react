@@ -37,23 +37,21 @@ h5 {
 .temperature {
   color: var(--orange);
   font-size: 90px;
-  position: relative;
-  top: 5px;
-  left: -120px;
+  position: flex;
 }
 
 .celcius {
   color: var(--orange);
   font-size: 50px;
   position: relative;
-  left: 605px;
+  left: 100px;
 }
 
 .fahrenheit {
   color: blue;
   font-size: 50px;
   position: relative;
-  left: 590px;
+  left: 100px;
 }
 
 .card-title {
@@ -174,4 +172,40 @@ h5 {
   padding: 10px;
   color: var(--red);
   font-size: 20px;
+}
+
+@media (max-width: 665px) {
+  .celcius {
+    font-size: 40px;
+    left: 50px;
+  }
+
+  .fahrenheit {
+    font-size: 40px;
+    left: 50px;
+  }
+
+  .current-location-button {
+    left: 370px;
+  }
+}
+
+@media (max-width: 565px) {
+  .temperature {
+    padding-top: 20px;
+  }
+
+  .celcius {
+    font-size: 30px;
+    left: 10px;
+  }
+
+  .fahrenheit {
+    font-size: 30px;
+    left: 10px;
+  }
+
+  .current-location-button {
+    left: 320px;
+  }
 }

@@ -10,7 +10,9 @@ export default function App() {
       <header>
         <h1>Welcome to my React Weather App</h1>
         <Container />
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </header>
     </div>
   );
