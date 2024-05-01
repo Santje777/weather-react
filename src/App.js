@@ -4,10 +4,10 @@ import Footer from "./Footer.js";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         <h1>Welcome to my React Weather App</h1>
         <Container />
         <Footer />
@@ -15,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

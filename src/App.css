@@ -10,8 +10,6 @@
   background: linear-gradient(to left, rgb(60, 179, 250), var(--yellow));
 }
 
-.App-header {
-}
 h1 {
   position: relative;
   top: 10px;
