@@ -4,10 +4,15 @@
   --yellow: rgb(253, 216, 81);
 }
 
-.App {
-  text-align: left;
-  display: block;
+body {
   background: linear-gradient(to left, rgb(60, 179, 250), var(--yellow));
+}
+
+.App {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  max-width: 700px;
 }
 
 h1 {
@@ -34,24 +39,28 @@ h5 {
   color: purple;
 }
 
+li {
+  list-style: none;
+}
+
+.card {
+  display: block;
+  margin: 0 auto;
+}
+
 .temperature {
-  color: var(--orange);
-  font-size: 90px;
-  position: flex;
+  display: flex;
+  justify-content: center;
 }
 
 .celcius {
   color: var(--orange);
   font-size: 50px;
-  position: relative;
-  left: 100px;
 }
 
 .fahrenheit {
   color: blue;
   font-size: 50px;
-  position: relative;
-  left: 100px;
 }
 
 .card-title {
@@ -60,12 +69,10 @@ h5 {
 
 .card-one {
   background: rgb(231, 100, 100);
-  max-width: 700px;
-  position: relative;
   top: 30px;
   padding-bottom: 30px;
-  margin-left: 20px;
-  border: var(--red);
+  border-color: var(--red);
+  border-radius: 8px;
 }
 .today-highest-lowest {
   position: relative;
@@ -105,13 +112,12 @@ h5 {
 .card-one-screen {
   display: block;
   position: relative;
-  padding: 5px;
   max-width: 500px;
   top: 30px;
-  left: 20px;
   font-size: 30px;
   color: var(--red);
-  border: var(--red);
+  border-color: var(--red);
+  border-radius: 8px;
   background: rgba(253, 216, 81, 0.6);
 }
 .card-two-screen {
@@ -147,26 +153,24 @@ h5 {
   left: 180px;
 }
 .input-one {
+  display: block;
+  margin: 0 auto;
   position: relative;
-  left: 30px;
   top: 15px;
-  width: 190px;
-}
-.input-two {
-  position: relative;
-  top: 70px;
   width: 190px;
 }
 
 .current-location-button {
-  display: block;
-  position: absolute;
-  left: 470px;
-  top: 50px;
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+.to-the-left {
+  text-align: left;
+  margin-left: 40px;
 }
 
 .link-to-github {
-  background: linear-gradient(to left, rgb(60, 179, 250), rgb(253, 216, 81));
   display: block;
   position: relative;
   top: 50px;
@@ -178,16 +182,10 @@ h5 {
 @media (max-width: 665px) {
   .celcius {
     font-size: 40px;
-    left: 50px;
   }
 
   .fahrenheit {
     font-size: 40px;
-    left: 50px;
-  }
-
-  .current-location-button {
-    left: 370px;
   }
 }
 
@@ -198,15 +196,12 @@ h5 {
 
   .celcius {
     font-size: 30px;
-    left: 10px;
   }
 
   .fahrenheit {
     font-size: 30px;
-    left: 10px;
   }
-
-  .current-location-button {
-    left: 320px;
+  .to-the-left {
+    margin-left: 0px;
   }
 }

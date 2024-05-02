@@ -4,14 +4,18 @@ import CurrentLocation from "./CurrentLocation.js";
 
 export default function Container(props) {
   return (
-    <div className="container-ms">
+    <div className="container-sm">
       <div className="card card-one">
         <div className="card-body">
-          <h1 id="place">place</h1>
-          <h1 id="current-date">today</h1>
+          <CurrentLocation />
+          <h1 className="to-the-left" id="place">
+            place
+          </h1>
+          <h1 className="to-the-left" id="current-date">
+            today
+          </h1>
           <Temperature name="Groningen" temperature={19} />
           <Weather />
-          <CurrentLocation />
         </div>
       </div>
     </div>
