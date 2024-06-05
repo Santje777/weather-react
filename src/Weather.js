@@ -3,6 +3,7 @@ import axios from "axios";
 
 import FormattedDate from "./FormattedDate.js";
 import Temperature from "./Temperature.js";
+import WeatherIcon from "./WeatherIcon.js";
 
 export default function Weather() {
   const [city, setCity] = useState("");
@@ -17,7 +18,7 @@ export default function Weather() {
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
-      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -63,10 +64,7 @@ export default function Weather() {
   if (loaded) {
     return (
       <div className="SearchCity">
-        <h1 className="to-the-left" id="place">
-            {city}
-          </h1>
-          <h1 className="to-the-left" id="current-date">
+          <h1>
             <FormattedDate date={weather.date} />
           </h1>
           <br />
@@ -75,9 +73,10 @@ export default function Weather() {
       </h2>
       <br />
         <Temperature name={city} temperature={Math.round(weather.temperature)} />
-
-        <i>{weather.description}</i>
-        <img src={weather.icon} alt="Weather icon" />
+<br />
+        <div className="description"><i>{weather.description}</i>
+        </div>
+        <WeatherIcon code={weather.icon} alt={weather.description} />
         <br />
         {form}
         <div className="card card-one-screen" id="extra">
