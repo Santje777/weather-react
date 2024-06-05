@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        <h1>Welcome to my React Weather App</h1>
+        <h1><b>Welcome to my React Weather App</b></h1>
         <Container />
         <footer>
           <Footer />

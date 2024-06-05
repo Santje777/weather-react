@@ -68,7 +68,7 @@ export default function Weather() {
             <FormattedDate date={weather.date} />
           </h1>
           <br />
-          <h2>
+          <h2 className="temperature celcius">
         It is {Math.round(weather.temperature)}°C in {city}{" "}
       </h2>
       <br />
