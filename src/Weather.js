@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 import FormattedDate from "./FormattedDate.js";
 import Temperature from "./Temperature.js";
 import WeatherIcon from "./WeatherIcon.js";
+import axios from "axios";
 
 export default function Weather() {
   const [city, setCity] = useState("");
