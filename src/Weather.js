@@ -29,6 +29,13 @@ export default function Weather() {
     axios.get(url).then(displayData);
   }
 
+  function search() {
+    const apiKey = "535cacbb3f8a0df0aeb4790235b9541f";
+    let units = "metric";
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=${apiKey}&units=${units}`;
+    axios.get(url).then(displayData);
+  }
+
   function updateCity(event) {
     setCity(event.target.value);
   }
@@ -64,7 +71,7 @@ export default function Weather() {
           </h1>
           <br />
           <h2>
-        It is {Math.round(weather.temperature)} in {city}{" "}
+        It is {Math.round(weather.temperature)}°C in {city}{" "}
       </h2>
       <br />
         <Temperature name={city} temperature={Math.round(weather.temperature)} />
@@ -85,6 +92,7 @@ export default function Weather() {
       </div>
     );
   } else {
+    search();
     return form;
   }
 }
