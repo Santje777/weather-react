@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function WeatherForecast(props) {
 const [loaded, setLoaded] = useState(false);
 const [forecast, setForecast] = useState(null);
+
+useEffect(() =>{
+  setLoaded(false);
+  }, [props.coordinates]);
   
   function handleResponse(response) {
   setForecast(response.data.daily);
@@ -18,9 +22,10 @@ const [forecast, setForecast] = useState(null);
         <div className="card card-three">
           <div className="card-body">
               <div className="row">
-              <div className="col">
-                <WeatherForecastDay data={forecast[0]} />
-             </div>
+                {forecast.map(function(dailyForecast,index) {
+                  return(<div className="col" key={index}>
+                <WeatherForecastDay data={dailyForecast} /></div>);
+                })}
             </div>
           </div>
         </div>
