@@ -76,7 +76,7 @@ export default function Weather() {
 <br />
         <div className="description"><i>{weather.description}</i>
         </div>
-        <WeatherIcon code={weather.icon} alt={weather.description} />
+        <WeatherIcon code={weather.icon} alt={weather.description} size={100} color="rgb(253, 216, 81)"/>
         <br />
         {form}
         <div className="card card-one-screen" id="extra">

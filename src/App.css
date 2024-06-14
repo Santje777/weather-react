@@ -1,6 +1,6 @@
 :root {
   --red: rgb(149, 25, 8);
-  --orange: rgb(255, 192, 46);
+  --orange: rgb(255, 171, 46);
   --yellow: rgb(253, 216, 81);
 }
 
@@ -31,7 +31,7 @@ h3 {
   color: green;
 }
 
-h4.card-title {
+h4 {
   color: rgba(55, 43, 226, 0.8);
 }
 
@@ -64,18 +64,16 @@ li {
 }
 
 .description {
-  color: #0d6efd;
+  color: var(--yellow);
   font-size: 30px;
 }
 
-.card-title {
-  color: yellow;
-}
+
 
 .card-one {
   background: rgb(231, 100, 100);
   top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   border-color: var(--red);
   border-radius: 8px;
 }
@@ -89,15 +87,12 @@ li {
 
 .card-two {
   background: rgb(248, 186, 40);
-  position: relative;
-  left: 12px;
   padding-bottom: 40px;
 }
 .card-three {
   background: rgb(15, 224, 43);
-  position: relative;
-  left: -12px;
-  padding-bottom: 40px;
+  padding: 10px;
+  border-color:#0d6efd;
 }
 .card-four {
   background: rgb(106, 156, 192);
@@ -116,7 +111,6 @@ li {
 
 .card-one-screen {
   display: block;
-  position: relative;
   max-width: 500px;
   top: 30px;
   font-size: 30px;
@@ -125,13 +119,17 @@ li {
   border-radius: 8px;
   background: rgba(253, 216, 81, 0.6);
 }
+
 .card-two-screen {
   display: block;
-  position: absolute;
-  margin: 10px;
-  padding: 10px;
-  top: 90px;
-  left: 180px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+  font-size: 25px;
+  color: rgba(55, 43, 226, 0.8);
+  border-color: rgb(55, 43, 226);
+  border-radius: 8px;
+  background: rgba(253, 216, 81, 0.6);
 }
 .card-three-screen {
   display: block;
