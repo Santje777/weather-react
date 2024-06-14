@@ -53,14 +53,14 @@ li {
   justify-content: center;
 }
 
-.celcius {
+.celsius, .unit {
   color: var(--orange);
   font-size: 50px;
 }
 
 .fahrenheit {
   color: blue;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 .description {
@@ -91,6 +91,7 @@ li {
 }
 .card-three {
   background: rgb(15, 224, 43);
+ margin-top: 100px;
   padding: 10px;
   border-color:#0d6efd;
 }

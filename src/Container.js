@@ -7,7 +7,7 @@ export default function Container(props) {
       <div className="card card-one">
         <div className="card-body">
           <CurrentLocation />
-          <Weather />
+          <Weather defaultCity="Groningen" />
         </div>
       </div>
     </div>
